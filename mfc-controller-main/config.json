@@ -1,0 +1,58 @@
+{
+  "system": {
+    "mqtt_broker": "192.168.0.20",
+    "mqtt_port": 1883,
+    "base_topic": "testbench/lowpower/mfc",
+    "serial_baudrate": 38400,
+    "cycle_interval": 0.5,
+    "publish_interval": 1.0,
+    "reconnect_cooldown": 15.0,
+    "inter_device_delay": 0.05,
+    "ramp_rate": 50.0,
+    "log_level": "INFO"
+  },
+  "gases": {
+    "N2": 1.00,
+    "NITROGEN": 1.00,
+    "SF6": 0.27,
+    "SULFUR HEXAFLUORIDE": 0.27,
+    "CF4": 0.44,
+    "TETRAFLUOROMETHANE": 0.44,
+    "NF3": 0.50,
+    "NITROGEN TRIFLUORIDE": 0.50,
+    "C4F8": 0.15,
+    "OCTAFLUOROCYCLOBUTANE": 0.15,
+    "N2O": 0.71,
+    "NITROUS OXIDE": 0.71,
+    "NH3": 0.77,
+    "AMMONIA": 0.77,
+    "HE": 1.40,
+    "HELIUM": 1.40,
+    "AR": 1.40,
+    "ARGON": 1.40,
+    "AIR": 1.00,
+    "H2": 1.01
+  },
+  "unit_multipliers": {
+    "ln/min": 1000.0,
+    "slm": 1000.0,
+    "slpm": 1000.0,
+    "mln/min": 1.0,
+    "ml/min": 1.0,
+    "sccm": 1.0,
+    "ccm": 1.0,
+    "bar": 1.0,
+    "bara": 1.0,
+    "barg": 1.0,
+    "mbar": 0.001,
+    "mbar d": 0.001,
+    "psi": 1.0,
+    "psia": 1.0,
+    "psig": 1.0,
+    "%": 1.0,
+    "ls/min": 1000.0
+  },
+  "pressure_units": [
+    "bar", "bara", "barg", "mbar", "psi", "psia", "psig", "%", "mbar d"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "serial": {
+    "port": "/dev/ttyUSB36",
+    "baudrate": 9600
+  },
+  "mqtt": {
+    "broker": "192.168.0.20",
+    "port": 1883,
+    "base_topic": "testbench/lowpower"
+  },
+  "timing": {
+    "watchdog_timeout": 60.0,
+    "sensor_timeout": 1.0,
+    "inter_sensor_delay": 0.1,
+    "byte_timeout": 0.05,
+    "maintenance_settle": 2.0,
+    "address_change_stabilize": 3.0
+  },
+  "topics": {
+    "address_change_request": "address/change",
+    "address_change_status": "address/status",
+    "status": "gateway/status"
+  },
+  "sensors": {
+    "1": {
+      "name": "temp_hum_1",
+      "location": "chamber_top",
+      "format": "INT16_DIV10",
+      "type": "temperature"
+    },
+    "2": {
+      "name": "temp_hum_2",
+      "location": "chamber_bottom",
+      "format": "INT16_DIV10",
+      "type": "temperature"
+    },
+    "3": {
+      "name": "temp_hum_3",
+      "location": "chamber_inlet",
+      "format": "INT16_DIV10",
+      "type": "temperature"
+    }
+  }
+}

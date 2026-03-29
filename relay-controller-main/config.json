@@ -1,0 +1,29 @@
+{
+  "mqtt": {
+    "broker_host": "192.168.0.20",
+    "broker_port": 1883,
+    "client_id": "relay-controller",
+    "username": "",
+    "password": "",
+    "keepalive": 60,
+    "base_topic": "testbench/lowpower/relay",
+    "qos": 1
+  },
+  "modbus": {
+    "port": "/dev/ttyUSB0",
+    "baudrate": 9600,
+    "bytesize": 8,
+    "parity": "N",
+    "stopbits": 1,
+    "timeout": 1,
+    "retries": 3
+  },
+  "relay_modules": [
+    {"modbus_address": 2, "channel_count": 16},
+    {"modbus_address": 3, "channel_count": 16},
+    {"modbus_address": 4, "channel_count": 16}
+  ],
+  "blocked_relays": [],
+  "status_poll_interval": 30,
+  "max_consecutive_errors": 3
+}

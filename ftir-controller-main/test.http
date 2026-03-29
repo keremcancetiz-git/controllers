@@ -1,0 +1,27 @@
+###
+GET http://localhost:8080/omnic/
+
+###
+POST http://localhost:8000/omnic/export/
+Content-Type: application/json
+
+{
+  "filename": "test.csv"
+}
+
+###
+GET http://localhost:8000/omnic/minimize-window/
+
+###
+GET http://localhost:8000/omnic/maximize-window/
+
+###
+POST http://localhost:8080/experiments/download-experiment
+Content-Type: application/json
+
+{
+  "experiment_name": "TEST"
+}
+
+###
+GET http://localhost:8080/experiments/

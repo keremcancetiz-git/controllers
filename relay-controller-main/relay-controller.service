@@ -1,0 +1,15 @@
+[Unit]
+Description=Modbus RTU Relay Controller with MQTT
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=innoflex
+WorkingDirectory=/home/innoflex/relay-controller
+ExecStart=/home/innoflex/.local/bin/uv run main.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

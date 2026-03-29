@@ -1,0 +1,10 @@
+.ideaß
+/.idea
+.venv
+.env
+__pycache__
+*.pyc
+/core/__pycache__
+/omnic/migrations/__pycache__
+/core/__pycache__
+ftir
