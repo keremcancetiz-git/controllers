@@ -1,0 +1,15 @@
+[Unit]
+Description=PID Temperature Controller MQTT Interface
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=innoflex
+WorkingDirectory=/home/innoflex/pid-controller
+ExecStart=/home/innoflex/.local/bin/uv run main.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

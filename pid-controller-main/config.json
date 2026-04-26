@@ -1,0 +1,31 @@
+{
+  "serial": {
+    "port": "/dev/ttyUSB1",
+    "baudrate": 9600,
+    "bytesize": 8,
+    "parity": "N",
+    "stopbits": 1,
+    "timeout": 1.0
+  },
+  "mqtt": {
+    "broker": "192.168.0.20",
+    "port": 1883,
+    "base_topic": "testbench/highpower/pid",
+    "keepalive": 60
+  },
+  "devices": [
+    {"modbus_address": 5},
+    {"modbus_address": 6},
+    {"modbus_address": 7}
+  ],
+  "registers": {
+    "pv": 0,
+    "sv": 2
+  },
+  "polling_interval": 2.0,
+  "modbus_address_offset": 4,
+  "value_scale": 1,
+  "reconnect_base_cooldown": 5,
+  "reconnect_max_cooldown": 60,
+  "max_consecutive_errors": 3
+}

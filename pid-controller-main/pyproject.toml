@@ -1,0 +1,11 @@
+[project]
+name = "pid-controller"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "paho-mqtt>=2.1.0",
+    "pymodbus>=3.12.1",
+    "pyserial>=3.5",
+]

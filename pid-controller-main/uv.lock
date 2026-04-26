@@ -1,0 +1,47 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[[package]]
+name = "paho-mqtt"
+version = "2.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/39/15/0a6214e76d4d32e7f663b109cf71fb22561c2be0f701d67f93950cd40542/paho_mqtt-2.1.0.tar.gz", hash = "sha256:12d6e7511d4137555a3f6ea167ae846af2c7357b10bc6fa4f7c3968fc1723834", size = 148848, upload-time = "2024-04-29T19:52:55.591Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c4/cb/00451c3cf31790287768bb12c6bec834f5d292eaf3022afc88e14b8afc94/paho_mqtt-2.1.0-py3-none-any.whl", hash = "sha256:6db9ba9b34ed5bc6b6e3812718c7e06e2fd7444540df2455d2c51bd58808feee", size = 67219, upload-time = "2024-04-29T19:52:48.345Z" },
+]
+
+[[package]]
+name = "pid-controller"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "paho-mqtt" },
+    { name = "pymodbus" },
+    { name = "pyserial" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "paho-mqtt", specifier = ">=2.1.0" },
+    { name = "pymodbus", specifier = ">=3.12.1" },
+    { name = "pyserial", specifier = ">=3.5" },
+]
+
+[[package]]
+name = "pymodbus"
+version = "3.12.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c8/cf/9ace571421e4ed8bc870e79caca7fe04b7e2529764494f1fb406053640ef/pymodbus-3.12.1.tar.gz", hash = "sha256:bcb483381747b3e3aec2c8e01d5df885e5ea43f85b7145dc1907af06aca93a2c", size = 167673, upload-time = "2026-02-19T21:02:57.035Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a5/05/fd7f09ab026be0c5d8433661bbf2181e2802883baadce51955a936286e51/pymodbus-3.12.1-py3-none-any.whl", hash = "sha256:cb4785bdee8870ee593ea1f338f859f50581e3a615261ffbd464602e21d03b85", size = 169517, upload-time = "2026-02-19T21:02:55.009Z" },
+]
+
+[[package]]
+name = "pyserial"
+version = "3.5"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/1e/7d/ae3f0a63f41e4d2f6cb66a5b57197850f919f59e558159a4dd3a818f5082/pyserial-3.5.tar.gz", hash = "sha256:3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb", size = 159125, upload-time = "2020-11-23T03:59:15.045Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/07/bc/587a445451b253b285629263eb51c2d8e9bcea4fc97826266d186f96f558/pyserial-3.5-py2.py3-none-any.whl", hash = "sha256:c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0", size = 90585, upload-time = "2020-11-23T03:59:13.41Z" },
+]
