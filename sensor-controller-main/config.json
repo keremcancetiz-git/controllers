@@ -1,0 +1,56 @@
+{
+  "buses": [
+    {
+      "id": "bus0",
+      "serial": {
+        "port": "/dev/SENSORS0",
+        "baudrate": 9600
+      },
+      "sensors": {
+        "11": {
+          "name": "Main_line",
+          "location": "Second_floor",
+          "type": "temperature_humidity"
+        },
+        "12": {
+          "name": "Main_line",
+          "location": "First_floor",
+          "type": "temperature_humidity"
+        },
+        "13": {
+          "name": "FTIR_in_line",
+          "location": "Second_floor",
+          "type": "temperature_humidity"
+        }
+      }
+    },
+    {
+      "id": "bus1",
+      "serial": {
+        "port": "/dev/SENSORS1",
+        "baudrate": 9600
+      },
+      "sensors": {}
+    }
+  ],
+  "mqtt": {
+    "broker": "192.168.0.20",
+    "port": 1883,
+    "base_topic": "testbench/lowpower"
+  },
+  "timing": {
+    "watchdog_timeout": 60.0,
+    "sensor_timeout": 1.0,
+    "inter_sensor_delay": 0.3,
+    "byte_timeout": 0.05,
+    "maintenance_settle": 2.0,
+    "address_change_stabilize": 3.0
+  },
+  "topics": {
+    "sensor_update_request": "sensor/update",
+    "sensor_add_request": "sensor/add",
+    "sensor_remove_request": "sensor/remove",
+    "sensor_command_status": "sensor/status",
+    "status": "gateway/status"
+  }
+}

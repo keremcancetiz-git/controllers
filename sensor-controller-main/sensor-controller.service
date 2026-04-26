@@ -1,0 +1,18 @@
+[Unit]
+Description=Sensor Gateway - Modbus RTU to MQTT
+After=network-online.target systemd-udev-settle.service
+Wants=network-online.target systemd-udev-settle.service
+
+[Service]
+Type=simple
+User=innoflex
+WorkingDirectory=/home/innoflex/sensor-controller
+ExecStartPre=/bin/sleep 15
+ExecStart=/home/innoflex/.local/bin/uv run main.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
