@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-*.pyo
-.venv/
-*.egg-info/
-dist/
-build/
-.idea/
-docs/_build/
