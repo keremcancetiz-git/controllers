@@ -1,0 +1,8 @@
+asgiref
+Django
+djangorestframework
+python-dotenv
+sqlparse
+pywin32
+numpy
+pandas
